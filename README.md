@@ -1,7 +1,7 @@
 Test2::Plugin::AfterSubtest
 ===========================
 
-Exports a single function for executing a callback after a subtest has completed.
+Exports a single function for executing a callback after every subtest completes.
 
 ```perl
 use Test2::Bundle::More;
@@ -13,5 +13,9 @@ after_subtest(sub {
 
 subtest test => sub {
     ok('subtest is running');
+};
+
+subtest test2 => sub {
+    ok('subtest2 is running');
 };
 ```
