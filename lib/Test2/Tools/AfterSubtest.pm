@@ -1,4 +1,4 @@
-package Test2::Plugin::AfterSubtest;
+package Test2::Tools::AfterSubtest;
 use strict;
 use warnings;
 use base 'Exporter';
@@ -21,7 +21,7 @@ sub after_subtest {
 
 =head1 NAME
 
-Test2::Plugin::AfterSubtest - Test2 after_subtest callback
+Test2::Tools::AfterSubtest - Test2 after_subtest callback
 
 =head1 DESCRIPTION
 
@@ -33,7 +33,7 @@ Useful for things like cleaning up the database after each test.
 =head1 SYNOPSIS
 
   use Test2::Bundle::More;
-  use Test2::Plugin::AfterSubtest;
+  use Test2::Tools::AfterSubtest;
   after_subtest(sub {
     diag 'Subtest has finished;
   });

@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use Test2::Bundle::More;
-use Test2::Plugin::AfterSubtest qw/after_subtest/;
+use Test2::Tools::AfterSubtest qw/after_subtest/;
 
 my $callback_called;
 after_subtest(sub {

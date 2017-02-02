@@ -1,11 +1,11 @@
-Test2::Plugin::AfterSubtest
-===========================
+Test2::Tools::AfterSubtest
+==========================
 
 Exports a single function for executing a callback after every subtest completes.
 
 ```perl
 use Test2::Bundle::More;
-use Test2::Plugin::AfterSubtest;
+use Test2::Tools::AfterSubtest;
 
 after_subtest(sub {
     diag "subtest has finished";
